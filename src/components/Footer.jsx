@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="relative mt-24 overflow-hidden">
+    <footer className="relative mt-24 overflow-hidden z-20">
       
       <div className="h-px w-full bg-linear-to-r from-transparent via-slate-700 to-transparent dark:via-cyan-500/20" />
 

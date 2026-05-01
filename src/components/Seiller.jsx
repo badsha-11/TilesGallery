@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FaCheckCircle } from "react-icons/fa"; 
 
 const Seiller = () => {
@@ -6,12 +7,13 @@ const Seiller = () => {
     <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 mb-24 items-center">
      
       <div className="relative group">
-        <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+        <div className="absolute -inset-1 bg-linear-to-r from-cyan-500 to-blue-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
         <Image
           src="/sell-Tiles.jpg"
           alt="Premium Tiles Gallery"
           width={600}
           height={800}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           className="relative rounded-2xl object-cover shadow-2xl"
         />
       </div>
@@ -60,9 +62,9 @@ const Seiller = () => {
         </div>
 
        
-        <button className="mt-8 px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-xl transition-all duration-300 shadow-lg shadow-cyan-500/20 active:scale-95">
+        <Link href="/all-tiles" className="mt-8 px-8 py-4 bg-cyan-500 hover:bg-cyan-400 text-slate-900 font-bold rounded-xl transition-all duration-300 shadow-lg shadow-cyan-500/20 active:scale-95">
           View All Collections
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -87,7 +87,7 @@ export default function Banner() {
                   
                   <div className="mt-8 flex gap-4">
                     <Link 
-                      href={slide.link} 
+                      href="/all-tiles"
                       className="bg-linear-to-r from-cyan-500 to-blue-600 text-white px-8 py-3 rounded-full font-bold text-lg hover:shadow-[0_0_20px_rgba(6,182,212,0.5)] transition-all active:scale-95"
                     >
                       {slide.btnText}

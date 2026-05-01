@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const DataCard = ({ item }) => {
     return (
@@ -32,9 +33,9 @@ const DataCard = ({ item }) => {
                   ${item.price}
                 </span>
                 
-                <button className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-4 py-2 rounded-lg font-bold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-cyan-500/20">
+                <Link href={`/all-tiles/${item.id}`} className="bg-cyan-500 hover:bg-cyan-400 text-slate-900 px-4 py-2 rounded-lg font-bold text-sm transition-all duration-300 active:scale-95 shadow-lg shadow-cyan-500/20">
                   Details
-                </button>
+                </Link>
               </div>
             </div>
           </div>

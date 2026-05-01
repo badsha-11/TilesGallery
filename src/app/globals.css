@@ -1,2 +1,29 @@
 @import "tailwindcss";
 @import "@heroui/styles"; 
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 15, 23, 42; 
+  --background-end-rgb: 2, 6, 23;    
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+::selection {
+  background-color: #06b6d4; 
+  color: white;
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "Discover Your Perfect Aesthetic",
+    "subtitle": "Premium ceramic tiles for modern homes",
+    "img": "/images/tiles/tile_001.jpg",
+    "btnText": "Browse Now",
+    "link": "/all-tiles"
+  },
+  {
+    "id": 2,
+    "title": "Modern & Stylish Designs",
+    "subtitle": "Elevate your interior with elegance",
+    "img": "/images/tiles/tile_002.jpg",
+    "btnText": "Explore Collection",
+    "link": "/all-tiles"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Tiles Collection",
+    "subtitle": "Designed for premium living spaces",
+    "img": "/images/tiles/tile_003.jpg",
+    "btnText": "Shop Now",
+    "link": "/all-tiles"
+  }
+]

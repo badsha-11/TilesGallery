@@ -9,28 +9,41 @@ import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react"; 
+import { Loder } from "./Loder";
 
 export default function Banner() {
   const [slides, setSlides] = useState([]); 
+  const [error, setError] = useState(false); 
 
-  
   useEffect(() => {
     const fetchBannerData = async () => {
       try {
+        
         const response = await fetch("/banner.json");
+        if (!response.ok) throw new Error("Data not found");
         const data = await response.json();
         setSlides(data);
       } catch (error) {
         console.error("Error fetching banner data:", error);
+        setError(true);
       }
     };
 
     fetchBannerData();
   }, []);
 
- 
+  
+  if (error) {
+    return <div className="h-[60vh] flex items-center justify-center text-red-500">Failed to load banner.</div>;
+  }
+
+  
   if (slides.length === 0) {
-    return <div className="h-[60vh] flex items-center justify-center text-white">Loading...</div>;
+    return (
+      <div className="h-[60vh] md:h-[80vh] w-full flex items-center justify-center bg-slate-900 rounded-3xl mt-5">
+        <Loder />
+      </div>
+    );
   }
 
   return (

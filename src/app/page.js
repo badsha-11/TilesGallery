@@ -1,4 +1,5 @@
 import Banner from "@/components/Banner";
+import Revew from "@/components/Revew";
 import TopGenaretions from "@/components/TopGenaretions";
 import Marquee from "react-fast-marquee";
 
@@ -24,6 +25,7 @@ export default function Home() {
       </div>
 
       <TopGenaretions />
+      <Revew/>
     </div>
   );
 }

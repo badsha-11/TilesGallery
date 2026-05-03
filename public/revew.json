@@ -1,0 +1,58 @@
+[
+  {
+    "id": "rev-1",
+    "name": "Ariful Islam",
+    "role": "Interior Designer",
+    "comment": "The quality of the marble tiles is exceptional. They transformed my client's living room into a luxury suite. Highly recommended!",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  {
+    "id": "rev-2",
+    "name": "Nusrat Jahan",
+    "role": "Home Owner",
+    "comment": "I was looking for something unique for my kitchen. The Tiles Gallery collection is diverse and the finish is top-notch.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/44.jpg"
+  },
+  {
+    "id": "rev-3",
+    "name": "Rakib Ahmed",
+    "role": "Architect",
+    "comment": "Best place in Dhaka for premium tiles. Their customer service and delivery speed are as impressive as their products.",
+    "rating": 4.8,
+    "image": "https://randomuser.me/api/portraits/men/46.jpg"
+  },
+  {
+    "id": "rev-4",
+    "name": "Sharmin Akter",
+    "role": "Real Estate Developer",
+    "comment": "We used their tiles for our latest project in Gulshan. The scratch-resistant surface is actually as good as they claim.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/65.jpg"
+  },
+  {
+    "id": "rev-5",
+    "name": "Tanvir Hasan",
+    "role": "Modern Artist",
+    "comment": "The textures and patterns are very artistic. It's rare to find such aesthetic designs in the local market.",
+    "rating": 4.5,
+    "image": "https://randomuser.me/api/portraits/men/52.jpg"
+  },
+  {
+    "id": "rev-6",
+    "name": "Fariha Karim",
+    "role": "Villa Owner",
+    "comment": "Fast delivery and zero breakages! The packaging was very secure. My bathroom looks like a 5-star hotel now.",
+    "rating": 5,
+    "image": "https://randomuser.me/api/portraits/women/22.jpg"
+  },
+  {
+    "id": "rev-7",
+    "name": "Sajid Mahmood",
+    "role": "Contractor",
+    "comment": "I've been in the construction business for 10 years, and I can say these are some of the best durable tiles I've worked with.",
+    "rating": 4.9,
+    "image": "https://randomuser.me/api/portraits/men/81.jpg"
+  }
+]

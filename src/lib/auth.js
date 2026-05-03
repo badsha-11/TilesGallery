@@ -14,16 +14,20 @@ const client = global._mongoClient;
 const db = client.db("tilesgallery");
 
 export const auth = betterAuth({
-  database: mongodbAdapter(db, {
-    client,
-  }),
+  database: mongodbAdapter(db, { client }),
+  baseURL: process.env.BETTER_AUTH_URL,
+  trustedOrigins: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+    "https://tiles-gallery-chi.vercel.app",
+  ],
   emailAndPassword: {
     enabled: true,
   },
   socialProviders: {
     google: {
-      clientId: process.env.GOOGLE_CLIENT_ID,       // ← fix
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET, // ← fix
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     },
   },
   user: {

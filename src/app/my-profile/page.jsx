@@ -28,7 +28,7 @@ const ProfilePage = () => {
         <div className="absolute -top-10 -right-10 w-32 h-32 bg-cyan-500/10 rounded-full blur-3xl" />
         <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-purple-500/10 rounded-full blur-3xl" />
 
-        {/* Avatar */}
+       
         <div className="flex flex-col items-center gap-4 relative">
           <div className="p-1 rounded-full bg-linear-to-tr from-cyan-500 to-purple-500 shadow-lg shadow-cyan-500/20">
             {user?.image ? (
@@ -55,10 +55,10 @@ const ProfilePage = () => {
           </div>
         </div>
 
-        {/* Divider */}
+        
         <div className="my-6 h-px bg-slate-700/50 w-full" />
 
-        {/* Info Cards */}
+       
         <div className="space-y-4">
           <div className="flex items-center gap-4 bg-slate-900/50 p-4 rounded-xl border border-slate-700/50">
             <div className="w-10 h-10 rounded-lg bg-cyan-500/10 flex items-center justify-center">

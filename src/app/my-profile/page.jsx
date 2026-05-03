@@ -9,7 +9,7 @@ const ProfilePage = () => {
 
   if (isPending) {
     return (
-      <div className="min-h-[80vh] flex items-center justify-center px-4">
+      <div className="min-h-[80vh] flex items-center justify-center px-4 py-10 bg-transparent">
         <div className="w-full max-w-md bg-slate-800/40 backdrop-blur-md rounded-2xl p-6 space-y-5 border border-slate-700/50">
           <div className="w-24 h-24 rounded-full bg-slate-700 animate-pulse mx-auto" />
           <div className="space-y-3">

@@ -7,7 +7,6 @@ import Providers from "@/components/Providers";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -22,7 +21,6 @@ export default function RootLayout({ children }) {
     <html lang="en" className="h-full antialiased">
       <body className={`${inter.className} min-h-full flex flex-col`}>
         <Providers>
-          
           <SquareRings />
           <Navbar />
           <main className="w-11/12 mx-auto relative z-10">{children}</main>
@@ -35,6 +33,7 @@ export default function RootLayout({ children }) {
             closeOnClick
             pauseOnHover
             theme="dark"
+            style={{ zIndex: 99999 }}
           />
         </Providers>
       </body>

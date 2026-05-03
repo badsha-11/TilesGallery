@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import data from '../../../public/data.json';
+
+import data from '../../../../public/data.json';
 
 const TilesDetailsPage = async ({ params }) => {
     const { id } = await params;

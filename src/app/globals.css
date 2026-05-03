@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@heroui/styles";
+@import "@heroui/styles"; 
 
 :root {
   --foreground-rgb: 255, 255, 255;

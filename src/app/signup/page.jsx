@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FaUser, FaEnvelope, FaLock, FaLink } from "react-icons/fa";
 import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const redirect = searchParams.get("redirect") || "/";
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -24,7 +26,7 @@ export default function SignUpPage() {
       toast.error(error.message || "Signup failed!");
     } else {
       toast.success("Registration Successful!");
-      setTimeout(() => router.push("/"), 2000);
+      setTimeout(() => router.push(redirect), 2000); // ← redirect
     }
     setLoading(false);
   };

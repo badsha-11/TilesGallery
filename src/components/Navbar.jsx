@@ -15,7 +15,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", href: "/" },
     { name: "All Tiles", href: "/all-tiles" },
-    { name: "My Profile", href: "/profile" },
+    { name: "My Profile", href: "/my-profile" },
   ];
 
   const handleLogout = async () => {

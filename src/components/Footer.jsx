@@ -1,13 +1,23 @@
+"use client";
+
 import Link from "next/link";
-import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      once: false,    
+      easing: "ease-out-back",
+    });
+  }, []);
+
   return (
     <footer className="relative mt-24 overflow-hidden z-20">
-      
       <div className="h-px w-full bg-linear-to-r from-transparent via-slate-700 to-transparent dark:via-cyan-500/20" />
 
-      
       <div className="absolute inset-0 -z-10 bg-white dark:bg-[#020617]" />
       <div
         className="absolute inset-0 -z-10 bg-linear-to-tr 
@@ -19,7 +29,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           
           
-          <div className="space-y-4">
+          <div className="space-y-4" data-aos="fade-right">
             <div className="flex items-center gap-2">
               <h2 className="text-xl font-black tracking-tight text-slate-900 dark:text-white italic">
                 Tiles<span className="text-cyan-500">Gallery</span>
@@ -30,8 +40,8 @@ const Footer = () => {
             </p>
           </div>
 
-         
-          <div>
+        
+          <div data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wider">
               Explore
             </h3>
@@ -48,8 +58,8 @@ const Footer = () => {
             </ul>
           </div>
 
-          
-          <div>
+        
+          <div data-aos="fade-up" data-aos-delay="200">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white mb-4 uppercase tracking-wider">
               Support
             </h3>
@@ -66,8 +76,8 @@ const Footer = () => {
             </ul>
           </div>
 
-         
-          <div className="space-y-4">
+        
+          <div className="space-y-4" data-aos="fade-left" data-aos-delay="300">
             <h3 className="text-sm font-semibold text-slate-900 dark:text-white uppercase tracking-wider">
               Stay Updated
             </h3>
@@ -88,14 +98,20 @@ const Footer = () => {
           </div>
         </div>
 
-       
-        <div className="mt-12 h-px w-full bg-linear-to-r from-transparent via-slate-200 to-transparent dark:via-slate-800" />
+        <div 
+          className="mt-12 h-px w-full bg-linear-to-r from-transparent via-slate-200 to-transparent dark:via-slate-800" 
+          data-aos="zoom-in"
+        />
 
        
-        <div className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500">
+        <div 
+          className="mt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500 dark:text-slate-500"
+          data-aos="fade-in"
+          data-aos-offset="0"
+        >
           <p>© {new Date().getFullYear()} Tiles Gallery. All rights reserved.</p>
           <div className="flex items-center gap-6">
-             <p>Designed by Isran Khan</p>
+             <p>Designed by <span className="text-cyan-500 font-medium">Isran Khan</span></p>
           </div>
         </div>
       </div>

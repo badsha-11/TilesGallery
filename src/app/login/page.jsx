@@ -2,13 +2,15 @@
 import React, { useState } from "react";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "react-toastify";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { FaEnvelope, FaLock } from "react-icons/fa";
 import { GrGoogle } from "react-icons/gr";
 
 export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const redirect = searchParams.get("redirect") || "/";
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +24,7 @@ export default function LoginPage() {
       toast.error(error.message || "Login failed!");
     } else {
       toast.success("Login Successful!");
-      setTimeout(() => router.push("/"), 2000);
+      setTimeout(() => router.push(redirect), 2000); // ← redirect
     }
     setLoading(false);
   };

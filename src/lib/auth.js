@@ -17,10 +17,11 @@ export const auth = betterAuth({
   database: mongodbAdapter(db, { client }),
   baseURL: process.env.BETTER_AUTH_URL,
   trustedOrigins: [
-    "http://localhost:3000",
-    "http://localhost:3001",
-    "https://tiles-gallery-chi.vercel.app",
-  ],
+  "http://localhost:3000",
+  "http://localhost:3001",
+  "https://tiles-gallery-chi.vercel.app",
+  "https://tiles-gallery-l1zu34w6e-ishrankhan6111-8883s-projects.vercel.app", 
+],
   emailAndPassword: {
     enabled: true,
   },
